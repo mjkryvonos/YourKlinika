@@ -49,11 +49,11 @@
 
 @media (max-width: 1024px) {
   #openModal {
-    min-width: 120px;   /* кнопка менша */
+    min-width: 120px;   
     font-size: 1rem;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;  /* обрізає текст на маленьких екранах */
+    text-overflow: ellipsis;  
   }
 }
 
@@ -639,13 +639,11 @@
     width: 100%;
   }
 
-  .doctors-grid {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+
 }
 
 .burger {
+  margin-left: auto;
   display: none;
   flex-direction: column;
   gap: 5px;
@@ -662,6 +660,7 @@
 
 @media (max-width: 1024px) {
   .burger {
+    margin-left: 23rem;
     display: flex;
   }
 }
