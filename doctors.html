@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Підключення іконок Remix Icon -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Лікарі - Your Klinika</title>
+</head>
+
+<body>
+  <!-- ================= TOP BAR ================= -->
+  <div class="top-bar">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/yourklinika.fastiv/" target="_blank">
+        <i class="ri-facebook-fill"></i>
+      </a>
+      <a href="https://www.instagram.com/yourklinika.fastiv?igsh=cTJiYTQwN2dqbmlv&utm_source=qr" target="_blank">
+        <i class="ri-instagram-line"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= NAVIGATION ================= -->
+  <div class="container">
+    <nav>
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo.webp" alt="Your Klinika Logo">
+      </a>
+      <ul class="nav__links">
+        <li class="link"><a href="index.html">Головна</a></li>
+        <li class="link"><a href="about.html">Про нас</a></li>
+        <li class="link"><a href="services.html">Послуги</a></li>
+        <li class="link"><a href="doctors.html">Лікарі</a></li>
+        <li class="link"><a href="blog.html">Блог</a></li>
+        <li class="link"><a href="contacts.html">Контакти</a></li>
+      </ul>
+      <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>      
+      <button class="btn" id="openModal">Записатись на прийом</button>
+    </nav>
+
+    <!-- ================= DOCTORS HEADER ================= -->
+    <section class="about-header">
+      <h1>Лікарі</h1>
+    </section>
+
+    <!-- ================= DOCTORS SECTION ================= -->
+    <section class="doctors">
+      <div class="doctors-container">
+        <div class="doctors-grid">
+
+          <div class="doctor-card">
+            <img src="images/45лор2.webp" alt="Кривонос Юлія Костянтинівна">
+            <h3>Кривонос Юлія Костянтинівна</h3>
+            <p>Лікар отоларинголог (дитячий, дорослий), сурдолог</p>
+            <a href="krivonos-yuliya.html" class="btn-link">Детальніше</a>
+          </div>
+
+          <div class="doctor-card">
+            <img src="images/45гінеколог.webp" alt="Жаленко-Хасан Мирослава Вікторівна">
+            <h3>Жаленко-Хасан Мирослава Вікторівна</h3>
+            <p>Гінеколог</p>
+            <a href="zhalenko-miroslava.html" class="btn-link">Детальніше</a>
+          </div>
+
+          <div class="doctor-card">
+            <img src="images/45узд.webp" alt="Степаненко Анастасія Григорівна">
+            <h3>Степаненко Анастасія Григорівна</h3>
+            <p>Лікар УЗД, педіатр</p>
+            <a href="stepanenko-anastasiya.html" class="btn-link">Детальніше</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/logo.webp" alt="Logo">
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <a href="index.html">Головна</a>
+          <a href="about.html">Про нас</a>
+          <a href="services.html">Послуги</a>
+        </div>
+        <div class="footer-column">
+          <a href="doctors.html">Лікарі</a>
+          <a href="contacts.html">Контакти</a>
+        </div>
+        <div class="footer-column footer-contacts">
+          <span>+380 68 598 3035 <img src="images/phone-call-white.webp" alt="Телефон"></span>
+          <span>YourKlinika@gmail.com <img src="images/mail-white.webp" alt="Пошта"></span>
+          <span>м. Фастів, Київська 22А <img src="images/local-white.webp" alt="Локація"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= APPOINTMENT MODAL ================= -->
+  <div id="appointmentModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Записатись на прийом</h2>
+      <form id="appointmentForm">
+        <label for="name">Ваше ім’я:</label>
+        <input type="text" id="name" name="name" placeholder="Введіть ім’я" required>
+        <span class="error-message" id="nameError"></span>
+
+        <label for="phone">Номер телефону:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+380 __ ___ __ __" required>
+        <span class="error-message" id="phoneError"></span>
+
+        <input type="submit" value="Відправити">
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
