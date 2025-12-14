@@ -5,7 +5,10 @@
   --text-dark: #111827;            
   --white: #ffffff;
   --black: #000000;  
-  --orange: #f8982f;              
+  --orange: #f8982f; 
+
+  --site-bg: #ffffff;       
+  --darkbackground: #a6a6a6; 
 }
 
 body {

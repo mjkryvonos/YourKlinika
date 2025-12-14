@@ -65,7 +65,8 @@
   display: grid;                        
   grid-template-columns: repeat(2, 1fr); 
   gap: 2rem;                           
-  align-items: center;                  
+  align-items: center;    
+  background-color: var(--site-bg);              
 }
 
 /* ================= HEADER CONTENT ================= */
@@ -156,7 +157,7 @@
 /* ================= DOCTORS SECTION ================= */
 .doctors {
   padding: 4rem 2rem;
-  background-color: var(--white);
+  background-color: var(--site-bg);
 }
 
 .doctors-container {
@@ -251,7 +252,7 @@
 /* ================= CONTACTS SECTION ================= */
 .contacts {
   padding: 4rem 2rem;
-  background: var(--white);
+  background: var(--site-bg);
 }
 
 .contacts-title {
@@ -308,6 +309,7 @@
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem 1rem; 
+  background-color: var(--site-bg);  
 }
 
 .contact-left {
@@ -664,4 +666,24 @@
     display: flex;
   }
 }
+
+#themeToggleBtn {
+  position: fixed;      
+  top: 5px;           
+  left: 10px;          
+  padding: 0.5rem 1rem; 
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;        
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#themeToggleBtn:hover {
+  background-color: var(--primary-color-dark);
+}
+
 

@@ -40,6 +40,7 @@ nav {
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap; 
+  background-color: var(--site-bg);  
 }
 
 .nav__logo img {
@@ -76,7 +77,8 @@ nav {
   display: grid;                        
   grid-template-columns: repeat(2, 1fr); 
   gap: 2rem;                           
-  align-items: center;                  
+  align-items: center;     
+  background-color: var(--site-bg);
 }
 
 /* ================= IMAGE ================= */
@@ -94,7 +96,7 @@ nav {
 /* ================= ABOUT SECTION ================= */
 .about {
   padding: 4rem 2rem;
-  background-color: var(--white);
+  background-color: var(--site-bg);
 }
 
 .about-container {
@@ -120,6 +122,7 @@ nav {
   padding: 2rem 2rem;
   font-size: 1.1rem;
   text-align: left;
+  background-color: var(--site-bg);  
 }
 
 .about-content h1 {

@@ -1,4 +1,5 @@
 # YourKlinika
+
 **Project Description:**  
 Website for Your Klinika, a modern private medical center in Fastiv, Ukraine, providing information about doctors, services, pricing, and a medical blog for patients.
 
@@ -29,6 +30,11 @@ Website for Your Klinika, a modern private medical center in Fastiv, Ukraine, pr
 - **Media Queries** — for adaptation to different screen sizes (desktop, tablet, mobile)  
 - **CSS Variables** — for consistent colors, fonts, and spacing  
 - **CSS Components Structure** — base, layout, and components separation for easier maintenance  
-- **JavaScript** — interactive elements like burger menu and modal forms  
+- **JavaScript (DOM & Events)** — interactive elements such as:
+  - Modal forms with validation  
+  - Dynamic footer date display  
+  - Theme toggle button (light/dark background)  
+  - Menu link hover highlighting  
+- **Client-Side Validation** — for name and phone fields, including minimum/maximum lengths and proper format  
 - **Optional Preprocessors** — Sass/Less can be used for variables, nesting, and modular CSS  
 - **Responsive Design** — ensures usability on desktops, tablets, and smartphones
