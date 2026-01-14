@@ -376,31 +376,36 @@
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 1200px;
+  justify-content: space-between; 
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1400px;
   margin: 0 auto;
+  gap: 2rem;
 }
 
 .footer-logo img {
-  height: 70px;
+  height: 60px; 
   width: auto;
   display: block;
+  margin: 0; 
+}
+
+.footer-logo {
+  margin-left: 0;
 }
 
 .footer-links {
   display: flex;
-  flex-wrap: wrap; 
-  gap: 2rem;
-  flex: 1;
+  gap: 3rem; 
+  flex-wrap: wrap;
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  min-width: 120px; 
+  flex: unset; 
 }
 
 .footer-column a {
@@ -414,18 +419,29 @@
   color: var(--orange);
 }
 
-.footer-contacts span {
+.footer-contacts {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  gap: 0.6rem;
+}
+
+.footer-contacts span {
+  display: grid;
+  grid-template-columns: 1fr auto; 
   align-items: center;
-  gap: 0.5rem;
-  font-size: 1.4rem;
+  gap: 1rem; 
+  text-align: right;      
+  width: auto;
+  font-size: 1.5rem; 
 }
 
 .footer-contacts img {
-  height: 18px;
+  height: 24px;
   width: auto;
 }
 
+/* ================= RESPONSIVE ================= */
 @media (max-width: 1024px) {
   .footer-container {
     gap: 1rem;
@@ -441,21 +457,22 @@
 
   .footer-links {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
-  .footer-column {
-    min-width: 100%;
+  .footer-contacts {
+    align-items: flex-start; /* правий блок під серединку на мобілках */
   }
 
   .footer-contacts span {
     font-size: 1.3rem;
+    gap: 0.6rem;
   }
 }
 
 @media (max-width: 480px) {
   .footer-logo img {
-    height: 50px;
+    height: 45px;
   }
 
   .footer-column a {
@@ -464,7 +481,7 @@
 
   .footer-contacts span {
     font-size: 1.2rem;
-    gap: 0.3rem;
+    gap: 0.4rem;
   }
 }
 

@@ -150,32 +150,4 @@ nav {
   color: var(--orange);
 }
 
-/* ================= FOOTER LAYOUT ================= */
-.footer {
-  background-color: var(--primary-color-dark);
-  color: var(--white);
-  padding: 3rem 2rem;
-  width: 100%;
-}
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-logo img {
-  height: 70px;
-  width: auto;
-  display: block;
-}
-
-.footer-links {
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 2rem;
-  flex: 1;
-}

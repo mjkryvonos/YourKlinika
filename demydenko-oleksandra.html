@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Про нас - Your Klinika</title>
+  <title>Демиденко Олександра Василівна - Your Klinika</title>
 </head>
 
 <body>
@@ -44,22 +44,27 @@
     </nav>
 
     <section class="about-header">
-        <h1>ПРО НАС</h1>
+        <h1>Демиденко Олександра Василівна</h1>
     </section>
 
-    <section class="about-content">
-        <div id="about-text"></div>
-        <script>
-            const aboutTextContainer = document.getElementById('about-text');
-            if (aboutTextContainer) {
-                fetch('about-text.txt')
-                    .then(response => response.text())
-                    .then(data => {
-                        aboutTextContainer.innerHTML = data.replace(/\n/g, '<br>');
-                    })
-                    .catch(err => console.error("Не вдалося завантажити текст про нас:", err));
-            }
-        </script>
+    <section class="doctor-profile">
+      <div class="doctor-photo">
+        <img src="images/45узд2.jpg" alt="Демиденко Олександра Василівна">
+      </div>
+
+      <div class="doctor-info">
+        <p><strong>Спеціальність:</strong></p>
+        <ul>
+          <li>Лікар ультразвукової діагностики</li>
+        </ul>
+
+        <p><strong>Освіта:</strong></p>
+        <ul>
+          <li>Вінницький національний медичний університет ім. М.І. Пирогова — вища медична освіта за спеціальністю «Педіатрія»</li>
+          <li>2021 — Спеціалізація «Ультразвукова діагностика»</li>
+        </ul>
+
+      </div>
     </section>
   </div>
 

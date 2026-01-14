@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Підключення іконок Remix Icon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -13,8 +12,7 @@
   </head>
 
   <body>  
-    <button id="themeToggleBtn">Змінити тему</button>
-    <!-- ================= TOP BAR ================= -->
+
     <div class="top-bar">
       <div class="social-icons">
         <a href="https://www.facebook.com/yourklinika.fastiv/" target="_blank">
@@ -27,7 +25,6 @@
     </div>
 
     <div class="container">
-      <!-- ================= NAVIGATION ================= -->
       <nav>
         <a href="index.html" class="nav__logo">
             <img src="images/logo.webp" alt="Your Klinika Logo">
@@ -45,10 +42,8 @@
             <span></span>
             <span></span>
         </div>        
-        <button class="btn" id="openModal">Записатись на прийом</button>
       </nav>
 
-      <!-- ================= HEADER ================= -->
       <header class="header">
         <div class="content">
           <h1>
@@ -60,23 +55,19 @@
             нашому центрі в м. Фастів ви знайдете досвідчених лікарів, сучасне обладнання
             та уважне ставлення до кожного пацієнта.
           </p>
-          <button class="btn btn-header">Записатись на прийом</button>
         </div>
         <div class="image">
           <img src="images/header-bg1.png" alt="Header background image" loading="lazy">
         </div>
       </header>
 
-      <!-- ================= ABOUT SECTION ================= -->
       <section class="about">
         <div class="about-container">
           <div class="about-image">
             <img src="images/about_bg1.png" alt="About section image">
           </div>
           <div class="about-content">
-            <h1>
-              Про нас
-            </h1>
+            <h1>Про нас</h1>
             <p>
               Your Klinika / Твоя Клініка — сучасний
               медичний центр у м. Фастів. Ми розпочали
@@ -89,14 +80,11 @@
         </div>
       </section>
 
-      <!-- ================= DOCTORS SECTION ================= -->
       <section class="doctors">
         <div class="doctors-container">
           <div class="doctors-header">
             <img src="images/doc_icon.png" alt="Doctors icon" class="doctors-icon" loading="lazy">
-            <h1>
-              Наші лікарі
-            </h1>
+            <h1>Наші лікарі</h1>
           </div>
           <p class="doctors-subtitle">
             У нашій команді працюють кваліфіковані лікарі різних напрямків,
@@ -128,12 +116,9 @@
         </div>
       </section>
 
-      <!-- ================= CONTACTS SECTION ================= -->
       <section class="contacts">
         <div class="contacts-container">
-          <h1 class="contacts-title">
-            Контакти
-          </h1>
+          <h1 class="contacts-title">Контакти</h1>
           <div class="contacts-bottom">
             <div class="contacts-left">
               <div class="contact-item">
@@ -159,57 +144,41 @@
         </div>
       </section>
 
-      <!-- ================= APPOINTMENT MODAL ================= -->
-      <div id="appointmentModal" class="modal">
-        <div class="modal-content">
-          <span class="close" id="closeModal">&times;</span>                                    
-          <h2>Записатись на прийом</h2>
-          <form id="appointmentForm">
-            <label for="name">Ваше ім’я:</label>
-            <input type="text" id="name" name="name" placeholder="Введіть ім’я" required>
-            <span class="error-message" id="nameError"></span>
-
-            <label for="phone">Номер телефону:</label>
-            <input type="tel" id="phone" name="phone" placeholder="+380 __ ___ __ __" required>
-            <span class="error-message" id="phoneError"></span>
-
-            <input type="submit" value="Відправити">
-          </form>
-        </div>
-      </div>
-
     </div> 
     
-    <!-- ================= FOOTER ================= -->
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-logo">
-            <img src="images/logo.webp" alt="Logo" loading="lazy">
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/logo.webp" alt="Logo" loading="lazy">
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про нас</a>
+            <a href="services.html">Послуги</a>
           </div>
-          <div class="footer-links">
-            <div class="footer-column">
-              <a href="index.html">Головна</a>
-              <a href="about.html">Про нас</a>
-              <a href="services.html">Послуги</a>
-            </div>
-            <div class="footer-column">
-              <a href="doctors.html">Лікарі</a>
-              <a href="contacts.html">Контакти</a>
-            </div>
-            <div class="footer-column footer-contacts">
-              <span>+380 68 598 3035 <img src="images/phone-call-white.webp" alt="Телефон"></span>
-              <span>YourKlinika@gmail.com <img src="images/mail-white.webp" alt="Пошта"></span>
-              <span>м. Фастів, Київська 22А <img src="images/local-white.webp" alt="Локація"></span>
-            </div>
+          <div class="footer-column">
+            <a href="doctors.html">Лікарі</a>
+            <a href="contacts.html">Контакти</a>
+          </div>
+          <div class="footer-column footer-contacts">
+            <span>+380 68 598 3035 <img src="images/phone-call-white.webp" alt="Телефон"></span>
+            <span>YourKlinika@gmail.com <img src="images/mail-white.webp" alt="Пошта"></span>
+            <span>м. Фастів, Київська 22А <img src="images/local-white.webp" alt="Локація"></span>
           </div>
         </div>
-      </footer>
-      
-    <script src="script.js"></script>
+      </div>
+    </footer>
+
+    <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav__links');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+  </script>
     
   </body>
 </html>
-
-
-
-

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Про нас - Your Klinika</title>
+  <title>Жаленко-Хасан Мирослава Вікторівна - Your Klinika</title>
 </head>
 
 <body>
@@ -44,22 +44,34 @@
     </nav>
 
     <section class="about-header">
-        <h1>ПРО НАС</h1>
+        <h1>Жаленко-Хасан Мирослава Вікторівна</h1>
     </section>
 
-    <section class="about-content">
-        <div id="about-text"></div>
-        <script>
-            const aboutTextContainer = document.getElementById('about-text');
-            if (aboutTextContainer) {
-                fetch('about-text.txt')
-                    .then(response => response.text())
-                    .then(data => {
-                        aboutTextContainer.innerHTML = data.replace(/\n/g, '<br>');
-                    })
-                    .catch(err => console.error("Не вдалося завантажити текст про нас:", err));
-            }
-        </script>
+    <section class="doctor-profile">
+      <div class="doctor-photo">
+        <img src="images/45гінеколог.webp" alt="Жаленко-Хасан Мирослава Вікторівна">
+      </div>
+
+      <div class="doctor-info">
+        <p><strong>Спеціальність:</strong></p>
+        <ul>
+          <li>Лікар гінеколог</li>
+        </ul>
+
+        <p><strong>Освіта:</strong></p>
+        <ul>
+          <li>1996–2002 — КМУ ім. акад. О.О. Богомольця, «Лікувальна справа»</li>
+          <li>2002–2004 — Інтернатура, Київська медична академія післядипломної освіти ім. П.А. Шупика, МОЗ України</li>
+          <li>Симуляційний тренінг «Естетична гінекологія»</li>
+          <li>ТУ «Кольпоскопія та запальні захворювання в гінекології» (2015)</li>
+          <li>Спеціалізація з ультразвукової діагностики (2017)</li>
+          <li>ТУ «Актуальні питання репродуктивного здоров’я жінки» (2016)</li>
+          <li>ТУ «Основи гістеро- та лапароскопії в гінекології» (2018)</li>
+          <li>ТУ «Медицина молочної залози» (2019)</li>
+          <li>ТУ «Комплексна оцінка плода» (2019)</li>
+          <li>Продовжує безперервний професійний розвиток лікаря</li>
+        </ul>
+      </div>
     </section>
   </div>
 
@@ -99,6 +111,6 @@
         navLinks.classList.toggle('active');
     });
   </script>
-
+  
 </body>
 </html>

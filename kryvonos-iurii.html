@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Про нас - Your Klinika</title>
+  <title>Кривонос Юрій Миколайович - Your Klinika</title>
 </head>
 
 <body>
@@ -44,22 +44,33 @@
     </nav>
 
     <section class="about-header">
-        <h1>ПРО НАС</h1>
+        <h1>Кривонос Юрій Миколайович</h1>
     </section>
 
-    <section class="about-content">
-        <div id="about-text"></div>
-        <script>
-            const aboutTextContainer = document.getElementById('about-text');
-            if (aboutTextContainer) {
-                fetch('about-text.txt')
-                    .then(response => response.text())
-                    .then(data => {
-                        aboutTextContainer.innerHTML = data.replace(/\n/g, '<br>');
-                    })
-                    .catch(err => console.error("Не вдалося завантажити текст про нас:", err));
-            }
-        </script>
+    <section class="doctor-profile">
+      <div class="doctor-photo">
+        <img src="images/45кардіоревматолог.jpg" alt="Кривонос Юрій Миколайович">
+      </div>
+
+      <div class="doctor-info">
+        <p><strong>Спеціальність:</strong></p>
+        <ul>
+          <li>Лікар-педіатр, кардіоревматолог дитячий, кандидат медичних наук, доцент.</li>
+        </ul>
+
+        <p><strong>Освіта:</strong></p>
+        <ul>
+          <li>2005–2007 — Інтернатура та магістратура за спеціальністю «Педіатрія», Національний медичний університет імені О.О. Богомольця</li>
+          <li>2007–2009 — Клінічна ординатура за фахом «Педіатрія», кафедра педіатрії №4 НМУ імені О.О. Богомольця</li>
+          <li>2008 — Тематичне удосконалення «УЗД та ЕКГ-діагностика патології серця у кардіологічній та кардіохірургічній клініках», НМАПО імені П.Л. Шупика</li>
+          <li>2010 — Спеціалізація з дитячої кардіоревматології, НМАПО імені П.Л. Шупика</li>
+          <li>2017 — Стажування з дитячої кардіоревматології, НМАПО імені П.Л. Шупика</li>
+          <li>2025 — Спеціалізація з ультразвукової діагностики, НМАПО імені П.Л. Шупика</li>
+          <li>2009 – теперішній час — Асистент, згодом доцент кафедри педіатрії №4 Національного медичного університету імені О.О. Богомольця</li>
+          <li>2021 — Присвоєно науковий ступінь кандидата медичних наук</li>
+         <li>2024 — Присвоєно вчене звання доцента кафедри педіатрії</li>
+        </ul>
+      </div>
     </section>
   </div>
 

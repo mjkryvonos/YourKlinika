@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Про нас - Your Klinika</title>
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/yourklinika.fastiv/" target="_blank">
+        <i class="ri-facebook-fill"></i>
+      </a>
+      <a href="https://www.instagram.com/yourklinika.fastiv?igsh=cTJiYTQwN2dqbmlv&utm_source=qr" target="_blank">
+        <i class="ri-instagram-line"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav>
+      <a href="index.html" class="nav__logo">
+        <img src="images/logo.webp" alt="Your Klinika Logo">
+      </a>
+
+      <ul class="nav__links">
+        <li class="link"><a href="index.html">Головна</a></li>
+        <li class="link"><a href="about.html">Про нас</a></li>
+        <li class="link"><a href="services.html">Послуги</a></li>
+        <li class="link"><a href="doctors.html">Лікарі</a></li>
+        <li class="link"><a href="blog.html">Блог</a></li>
+        <li class="link"><a href="contacts.html">Контакти</a></li>
+      </ul>
+
+      <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </nav>
+
+    <section class="about-header">
+        <h1>БЛОГ</h1>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/logo.webp" alt="Logo">
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <a href="index.html">Головна</a>
+          <a href="about.html">Про нас</a>
+          <a href="services.html">Послуги</a>
+        </div>
+
+        <div class="footer-column">
+          <a href="doctors.html">Лікарі</a>
+          <a href="contacts.html">Контакти</a>
+        </div>
+
+        <div class="footer-column footer-contacts">
+          <span>+380 68 598 3035 <img src="images/phone-call-white.webp" alt="Телефон"></span>
+          <span>YourKlinika@gmail.com <img src="images/mail-white.webp" alt="Пошта"></span>
+          <span>м. Фастів, Київська 22А <img src="images/local-white.webp" alt="Локація"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav__links');
+
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+.prices-categories {
+  width: 80%; 
+  margin: 40px auto;  
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.price-box {
+  width: 100%;
+  background-color: var(--primary-color-dark);
+  color: #ffffff;
+
+  padding: 22px 28px;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.price-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.price-plus {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* Контент під прямокутником */
+.price-content {
+  display: none;
+  margin-top: 15px;
+  padding-left: 15px; /* відступ для контенту */
+}
+
+/* Відкритий блок */
+.price-item.active .price-content {
+  display: block;
+}
+
+/* Заголовки підблоків, наприклад "Консультації", "Дослідження" */
+.price-content h4 {
+  margin: 15px 0 10px;
+  color: var(--black);
+}
+
+/* Рядок з послугою */
+.price-row {
+  display: flex;
+  justify-content: space-between; /* назва зліва, ціна справа */
+  padding: 8px 0; /* збільшує відстань між рядками */
+  border-bottom: 2px solid var(--primary-color-dark); /* підкреслення синім */
+  line-height: 1.6; /* вертикальний відступ */
+}
+
+.service-name {
+  font-weight: 500;
+}
+
+.service-price {
+  font-weight: 600;
+  color: var(--orange); /* ціна помаранчева */
+}

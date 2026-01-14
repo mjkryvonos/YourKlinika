@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Підключення іконок Remix Icon -->
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
     rel="stylesheet">
@@ -13,8 +12,7 @@
 </head>
 
 <body>
-  <button id="themeToggleBtn">Змінити тему</button>
-  <!-- ================= TOP BAR ================= -->
+
   <div class="top-bar">
     <div class="social-icons">
       <a href="https://www.facebook.com/yourklinika.fastiv/" target="_blank">
@@ -26,7 +24,6 @@
     </div>
   </div>
 
-  <!-- ================= NAVIGATION ================= -->
   <div class="container">
     <nav>
       <a href="index.html" class="nav__logo">
@@ -45,15 +42,12 @@
           <span></span>
           <span></span>
       </div>      
-      <button class="btn" id="openModal">Записатись на прийом</button>
     </nav>
 
-    <!-- ================= DOCTORS HEADER ================= -->
     <section class="about-header">
       <h1>Лікарі</h1>
     </section>
 
-    <!-- ================= DOCTORS SECTION ================= -->
     <section class="doctors">
       <div class="doctors-container">
         <div class="doctors-grid">
@@ -62,7 +56,7 @@
             <img src="images/45лор2.webp" alt="Кривонос Юлія Костянтинівна">
             <h3>Кривонос Юлія Костянтинівна</h3>
             <p>Лікар отоларинголог (дитячий, дорослий), сурдолог</p>
-            <a href="krivonos-yuliya.html" class="btn-link">Детальніше</a>
+            <a href="kryvonos-yuliya.html" class="btn-link">Детальніше</a>
           </div>
 
           <div class="doctor-card">
@@ -79,12 +73,39 @@
             <a href="stepanenko-anastasiya.html" class="btn-link">Детальніше</a>
           </div>
 
+          <div class="doctor-card">
+            <img src="images/45кардіоревматолог.jpg" alt="Кривонос Юрій Миколайович">
+            <h3>Кривонос Юрій Миколайович</h3>
+            <p>Дитячий кардіоревматолог, педіатр</p>
+            <a href="kryvonos-iurii.html" class="btn-link">Детальніше</a>
+          </div>
+
+          <div class="doctor-card">
+            <img src="images/45кардіолог.jpg" alt="Романчук Наталія Сергіївна">
+            <h3>Романчук Наталія Сергіївна</h3>
+            <p>Кардіолог</p>
+            <a href="romanchuk-natalia.html" class="btn-link">Детальніше</a>
+          </div>
+
+          <div class="doctor-card">
+            <img src="images/45узд2.jpg" alt="Демиденко Олександра Василівна">
+            <h3>Демиденко Олександра Василівна</h3>
+            <p>Лікар ультразвукової діагностики</p>
+            <a href="demydenko-oleksandra.html" class="btn-link">Детальніше</a>
+          </div>
+
+          <div class="doctor-card">
+            <img src="images/45алерголог.jpg" alt="Захарчук Євгенія Олегівна">
+            <h3>Захарчук Євгенія Олегівна</h3>
+            <p>Педіатр-алерголог</p>
+            <a href="zakharchuk-yevheniia.html" class="btn-link">Детальніше</a>
+          </div>
+
         </div>
       </div>
     </section>
   </div>
 
-  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-logo">
@@ -110,27 +131,15 @@
     </div>
   </footer>
 
-  <!-- ================= APPOINTMENT MODAL ================= -->
-  <div id="appointmentModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      <h2>Записатись на прийом</h2>
-      <form id="appointmentForm">
-        <label for="name">Ваше ім’я:</label>
-        <input type="text" id="name" name="name" placeholder="Введіть ім’я" required>
-        <span class="error-message" id="nameError"></span>
+  <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav__links');
 
-        <label for="phone">Номер телефону:</label>
-        <input type="tel" id="phone" name="phone" placeholder="+380 __ ___ __ __" required>
-        <span class="error-message" id="phoneError"></span>
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+  </script>
 
-        <input type="submit" value="Відправити">
-      </form>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
-
-

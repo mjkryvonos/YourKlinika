@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Про нас - Your Klinika</title>
+  <title>Кривонос Юлія Костянтинівна - Your Klinika</title>
 </head>
 
 <body>
@@ -44,22 +44,37 @@
     </nav>
 
     <section class="about-header">
-        <h1>ПРО НАС</h1>
+        <h1>Кривонос Юлія Костянтинівна</h1>
     </section>
 
-    <section class="about-content">
-        <div id="about-text"></div>
-        <script>
-            const aboutTextContainer = document.getElementById('about-text');
-            if (aboutTextContainer) {
-                fetch('about-text.txt')
-                    .then(response => response.text())
-                    .then(data => {
-                        aboutTextContainer.innerHTML = data.replace(/\n/g, '<br>');
-                    })
-                    .catch(err => console.error("Не вдалося завантажити текст про нас:", err));
-            }
-        </script>
+    <section class="doctor-profile">
+      <div class="doctor-photo">
+        <img src="images/45лор2.webp" alt="Кривонос Юлія Костянтинівна">
+      </div>
+
+      <div class="doctor-info">
+        <p><strong>Спеціальність:</strong></p>
+        <ul>
+              <li>Лікар отоларинголог (дитячий та дорослий), сурдолог</li>
+            </ul>
+
+        <p><strong>Освіта:</strong></p>
+        <ul>
+          <li>2010–2016 — Національний медичний університет імені О.О. Богомольця, спеціальність «Педіатрія»</li>
+          <li>2016–2017 — Інтернатура у Національній медичній академії післядипломної освіти ім. П.А. Шупика, спеціальність «Дитяча отоларингологія»</li>
+          <li>2022 — Спеціалізація Отоларингологія (доросла)</li>
+          <li>2022 — Спеціалізація Сурдологія</li>
+          <li>Майстер-класи та професійний розвиток:
+            <ul>
+              <li>«Синдром обструктивного апное сну»</li>
+              <li>«КТ-діагностика захворювань носа та приносових пазух»</li>
+              <li>«Первинний онкоскрининг голови та шиї»</li>
+              <li>«Шум у вухах (тинітус): оцінка, діагностика та лікування»</li>
+              <li>Інші проф. курси та розвиток</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </section>
   </div>
 

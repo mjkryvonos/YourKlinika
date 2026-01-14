@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Підключення іконок Remix Icon -->
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
     rel="stylesheet">
@@ -12,8 +11,7 @@
 </head>
 
 <body>
-  <button id="themeToggleBtn">Змінити тему</button>
-  <!-- ================= TOP BAR ================= -->
+
   <div class="top-bar">
     <div class="social-icons">
       <a href="https://www.facebook.com/yourklinika.fastiv/" target="_blank">
@@ -25,7 +23,6 @@
     </div>
   </div>
 
-  <!-- ================= NAVIGATION ================= -->
   <div class="container">
     <nav>
       <a href="index.html" class="nav__logo">
@@ -44,15 +41,12 @@
           <span></span>
           <span></span>
       </div>
-      <button class="btn" id="openModal">Записатись на прийом</button>
     </nav>
 
-    <!-- ================= CONTACT HEADER ================= -->
     <section class="about-header">
       <h1>Контакти</h1>
     </section>
 
-    <!-- ================= CONTACT CONTENT ================= -->
     <section class="contact-content">
       <div class="contact-left">
         <p><strong>Телефон:</strong> +380 68 598 3035</p>
@@ -68,7 +62,6 @@
     </section>
   </div>
 
-  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-logo">
@@ -93,26 +86,16 @@
     </div>
   </footer>
 
-  <!-- ================= APPOINTMENT MODAL ================= -->
-  <div id="appointmentModal" class="modal">
-    <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      <h2>Записатись на прийом</h2>
-      <form id="appointmentForm">
-        <label for="name">Ваше ім’я:</label>
-        <input type="text" id="name" name="name" placeholder="Введіть ім’я" required>
-        <span class="error-message" id="nameError"></span>
+  <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav__links');
 
-        <label for="phone">Номер телефону:</label>
-        <input type="tel" id="phone" name="phone" placeholder="+380 __ ___ __ __" required>
-        <span class="error-message" id="phoneError"></span>
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+  </script>
 
-        <input type="submit" value="Відправити">
-      </form>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
 
